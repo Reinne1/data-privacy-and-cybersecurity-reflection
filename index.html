@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyscript Reflection Template</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css">
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <style>
+      body {
+        font-family: 'Courier New', Courier, monospace;
+        background-color: #FFC5C5; /* Soft Pink background */
+        margin: 0;
+        padding: 0;
+      }
+      
+      .container {
+        width: 35%;
+        margin: auto;
+        padding: 50px;
+        background-color: #E9D8B7; /* Blush */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-style: solid;
+        border-width: 5px;
+        border-color: #E4D6F5; /* Rose */
+      }
+      
+      h1 {
+        text-align: center;
+        color: #000000; /* Rose */
+        font-size: 36px;
+        font-weight: bold;
+      
+      }
+      
+      .outer-container {
+        background-color: #FFC0CB; /* Fuchsia */
+        padding: 20px;
+        border: solid;
+        border-color: #E4D6F5; /* Rose */
+        border-width: 5px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      
+      .inner-container {
+        background-color: #FF99CC; /* Pastel Pink */
+        padding: 10px;
+        border: solid;
+        border-color: #E4D6F5; /* Rose */
+        border-width: 5px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      
+      p {
+        font-weight: bold;
+        font-size: 18px;
+        color: #000000; /* Rose */
+      }
+      img{
+        width: 150px;
+        height:150px;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div style="text-align: center;">
+        <img src="amongus1.1.png" alt="A beautiful sunset">
+      </div>
+        <h1>Data Privacy and Cybersecurity Reflection</h1>
+        <div class="outer-container">
+            <p>Name: Jhonna Reinne V. Iguis</p>
+            <p>Grade/Section: BSIT 1ST YEAR</p>
+            <div class="inner-container">
+                <py-script>
+                    from pyscript import Element
+
+                    reflection_content = [
+                        "In our technology-driven society, the importance of data privacy and cyber awareness has become more critical than ever. The recent Data Privacy and Cyber Awareness Campaign aimed to educate individuals about various online threats and the protective measures they can implement to safeguard their personal information. Through a series of workshops, discussions, and practical resources, participants gained essential insights into the complexities of data privacy, ultimately fostering a culture of vigilance and responsibility in the digital sphere.",
+                        
+                        "A notable achievement of the campaign was the enhanced understanding of data privacy among participants. Many individuals are often unaware of how vulnerable their personal data can be in the digital world. The campaign emphasized the need to recognize the value of one’s information and the potential risks associated with data breaches. Participants learned about key practices such as reviewing privacy settings on social media, identifying secure websites, and the necessity of creating strong, unique passwords. This foundational knowledge is crucial, as it empowers individuals to manage their digital presence effectively and reduce potential risks.",
+                        
+                        "The campaign also focused on helping participants identify various cyber threats. Cybersecurity encompasses a wide array of risks, from phishing scams to more sophisticated social engineering tactics. Through interactive workshops, attendees engaged in discussions about real-world scenarios, which improved their ability to distinguish between legitimate communications and fraudulent ones. This proactive approach is vital; as cybercriminals continually adapt their tactics, continuous education is essential for equipping individuals with the skills to protect themselves.",
+                        
+                        "Creating a culture of cyber awareness was another key theme throughout the campaign. By fostering an environment where participants felt comfortable discussing their concerns and sharing experiences, the initiative helped build a community of informed individuals. This collaborative spirit is important, as it encourages people to remain alert and support one another in the face of potential threats. The campaign highlighted that cybersecurity is not only an individual responsibility but a shared endeavor. When individuals exchange knowledge and experiences, they enhance the overall security posture of the community.",
+                        
+                        "Additionally, the campaign provided practical tools and resources that participants could implement in their daily lives. Materials such as checklists for secure online behavior, guidelines for recognizing phishing attempts, and steps for reporting suspicious activity were among the valuable resources distributed. Participants expressed appreciation for these tangible tools, which made the concept of data privacy more actionable. This hands-on approach ensures that the knowledge gained is not merely theoretical but can be integrated into everyday practices, reinforcing the importance of vigilance in the digital landscape.",
+                        
+                        "Lastly, the campaign underscored the necessity of ongoing education in data privacy and cybersecurity. The digital landscape is ever-changing, and with it, the methods employed by cybercriminals. Therefore, regular training sessions and updates are crucial for keeping individuals informed about new threats and best practices. The campaign serves as a reminder that maintaining a robust cybersecurity posture is an ongoing effort rather than a one-time initiative. The campaign enhanced my understanding of data privacy, empowering me to protect myself and advocate for others."
+                    ]
+
+                    # Insert the reflection content into the HTML
+                    reflection_html = "<p>" + "</p><p>".join(reflection_content) + "</p>"
+                    Element('reflection').element.innerHTML = reflection_html
+                </py-script>
+
+                <div id="reflection"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
